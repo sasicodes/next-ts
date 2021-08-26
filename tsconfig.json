@@ -1,19 +1,46 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "sourceMap": true,
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "paths": {
+      "@Styles/*": ["src/styles/*"],
+      "@Components/*": ["src/components/*"],
+      "@Pages/*": ["pages/*"],
+      "@Utils/*": ["src/components/utils/*"],
+      "@Shared/*": ["src/components/shared/*"],
+      "@Context/*": ["src/context/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "next.config.js",
+    ".babelrc",
+    "bundles",
+    "coverage",
+    "test/*"
+  ]
 }
