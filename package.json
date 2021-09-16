@@ -20,7 +20,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^35.0.0",
     "eslint-plugin-unused-imports": "^1.1.4",
-    "prettier": "^2.3.2",
+    "prettier": "2.4.1",
     "typescript": "4.3.5"
   },
   "engines": {
