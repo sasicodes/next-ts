@@ -23,15 +23,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
-      "@Styles/*": ["src/styles/*"],
-      "@Components/*": ["src/components/*"],
+      "@Styles/*": ["styles/*"],
+      "@Components/*": ["components/*"],
       "@Pages/*": ["pages/*"],
-      "@Utils/*": ["src/components/utils/*"],
-      "@Shared/*": ["src/components/shared/*"],
-      "@Context/*": ["src/context/*"]
+      "@Utils/*": ["components/utils/*"],
+      "@Shared/*": ["components/shared/*"],
+      "@Context/*": ["context/*"],
+      "@GraphQL/*": ["graphql/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js"],
   "exclude": [
     "node_modules",
     "dist",
