@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client'
 import client from '@GraphQL/apollo-client'
+import Link from 'next/link'
 
 export default function Home({ countries }: { countries: any }) {
   return (
@@ -10,15 +11,14 @@ export default function Home({ countries }: { countries: any }) {
       </div>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
         {countries.map((country: any) => (
-          <div
-            key={country.code}
-            className="p-4 text-center bg-gray-100 rounded-lg"
-          >
-            <h3>{country.name}</h3>
-            <p>
-              {country.code} - {country.emoji}
-            </p>
-          </div>
+          <Link href={country.code} key={country.code}>
+            <a className="p-4 text-center bg-gray-100 rounded-lg">
+              <h3>{country.name}</h3>
+              <p>
+                {country.code} - {country.emoji}
+              </p>
+            </a>
+          </Link>
         ))}
       </div>
     </div>
