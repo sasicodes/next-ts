@@ -2,7 +2,7 @@ import { gql, useQuery } from '@apollo/client'
 import { useRouter } from 'next/router'
 
 const QUERY = gql`
-  query GetCountry($code: String!) {
+  query GetCountry($code: ID!) {
     country(code: $code) {
       name
     }
