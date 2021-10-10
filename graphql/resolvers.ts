@@ -1,5 +1,9 @@
+import db from '@Lib/prisma-client'
+
 export const resolvers = {
   Query: {
-    users: () => []
+    users: () => {
+      return db.user.findMany()
+    }
   }
 }
