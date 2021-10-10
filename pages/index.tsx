@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client'
-import client from '@GraphQL/apollo-client'
+import apolloClient from '@Lib/apollo-client'
 import Link from 'next/link'
 
-export default function Home({ countries }: { countries: any }) {
+export default function Home({ users }: { users: any }) {
   return (
     <div className="container h-screen mx-auto">
       <div className="my-20 text-center">
@@ -10,13 +10,11 @@ export default function Home({ countries }: { countries: any }) {
         <p>The following data is fetched from a external gql endpoint.</p>
       </div>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
-        {countries.map((country: any) => (
-          <Link href={country.code} key={country.code}>
+        {users.map((user: any) => (
+          <Link href={user.id} key={user.id}>
             <a className="p-4 text-center bg-gray-100 rounded-lg">
-              <h3>{country.name}</h3>
-              <p>
-                {country.code} - {country.emoji}
-              </p>
+              <h3>{user.name}</h3>
+              <p>{user.email}</p>
             </a>
           </Link>
         ))}
@@ -25,22 +23,24 @@ export default function Home({ countries }: { countries: any }) {
   )
 }
 
+const ALL_USERS_QUERY = gql`
+  query Users {
+    users {
+      email
+      name
+      id
+    }
+  }
+`
+
 export async function getServerSideProps() {
-  const { data } = await client.query({
-    query: gql`
-      query Countries {
-        countries {
-          code
-          name
-          emoji
-        }
-      }
-    `
+  const { data } = await apolloClient.query({
+    query: ALL_USERS_QUERY
   })
 
   return {
     props: {
-      countries: data.countries.slice(0, 9)
+      users: data.users
     }
   }
 }

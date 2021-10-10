@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@apollo/client": "3.4.16",
-    "@prisma/client": "3.2.1",
+    "@apollo/client": "^3.4.16",
+    "@prisma/client": "^3.2.1",
     "apollo-server-micro": "^3.3.0",
     "graphql": "^15.6.1",
     "micro": "^9.3.4",

@@ -1,5 +1,4 @@
 import { createContext } from '@GraphQL/context'
-import { resolvers } from '@GraphQL/resolvers'
 import { schema } from '@GraphQL/schema'
 import {
   ApolloServerPluginLandingPageDisabled,
@@ -10,7 +9,6 @@ import { NextApiRequest, NextApiResponse } from 'next'
 
 const apolloServer = new ApolloServer({
   schema,
-  resolvers,
   context: createContext,
   // apollo removed GraphQL playground after verison >= 3 by default, we can enable it by these plugins
   plugins: [
