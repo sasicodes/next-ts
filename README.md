@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project with Prisma, Typescript, GraphQL.
+This is a [NextJS](https://nextjs.org/) typescript project with Prisma ORM and Apollo GraphQL.
 
 ## Getting Started
 
-1. Install all your dependencies using,
+Install all your dependencies using,
 ```bash
 yarn
 
@@ -10,10 +10,12 @@ yarn
 
 npm i
 ```
-2. Add your database url in environment variable `DATABASE_URL`. (replace .env.example to .env)
-3. Migrate your tables from `prisma.schema` to database using,
+
+Add your database url in environment variable `DATABASE_URL`. (replace .env.example to .env)
+
+Migrate your tables from `prisma.schema` to database using,
 ```
-prisma migrate dev --name init
+prisma migrate dev
 ```
 Once done, run your development server using,
 ```bash
@@ -24,4 +26,14 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(Optional) Start your prisma studio using,
+
+```
+npx prisma studio
+```
+
+## Servers
+
+- NextJS - https://localhost:3000
+- Apollo Playgroud - https://localhost:3000/api/graphql
+- Prisma Studio - https://localhost:5000
