@@ -37,3 +37,7 @@ npx prisma studio
 - NextJS - https://localhost:3000
 - Apollo Playgroud - https://localhost:3000/api/graphql
 - Prisma Studio - https://localhost:5000
+
+## Usage
+
+- `nexus` - to generate schema for typescript
