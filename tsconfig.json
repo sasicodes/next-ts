@@ -23,13 +23,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
-      "@Styles/*": ["styles/*"],
-      "@Components/*": ["components/*"],
+      "@GraphQL/*": ["graphql/*"],
       "@Pages/*": ["pages/*"],
-      "@Utils/*": ["components/utils/*"],
-      "@Shared/*": ["components/shared/*"],
-      "@Context/*": ["context/*"],
-      "@GraphQL/*": ["graphql/*"]
+      "@Prisma/*": ["prisma/*"],
+      "@Styles/*": ["styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js"],
