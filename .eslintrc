@@ -33,7 +33,6 @@
     "unicorn/expiring-todo-comments": "error",
     "unicorn/explicit-length-check": "error",
     "unicorn/import-index": "off",
-    "unicorn/import-style": "error",
     "unicorn/new-for-builtins": "error",
     "unicorn/no-abusive-eslint-disable": "error",
     "unicorn/no-array-callback-reference": "error",
