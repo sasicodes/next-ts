@@ -1,4 +1,4 @@
-import { extendType, objectType } from 'nexus'
+import { extendType, nonNull, objectType, stringArg } from 'nexus'
 
 export const User = objectType({
   name: 'User',
@@ -16,6 +16,19 @@ export const UsersQuery = extendType({
       type: 'User',
       resolve(_parent, _args, ctx) {
         return ctx.db.user.findMany()
+      }
+    })
+  }
+})
+
+export const UserQuery = extendType({
+  type: 'Query',
+  definition(t) {
+    t.field('user', {
+      type: 'User',
+      args: { id: nonNull(stringArg()) },
+      resolve: (_parent, args, ctx) => {
+        return ctx.db.user.findUnique({ where: { id: args.id } })
       }
     })
   }

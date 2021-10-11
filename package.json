@@ -7,7 +7,8 @@
     "build:nexus-typegen": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' --transpile-only schema",
     "build": "npm run build:nexus-typegen && next build",
     "start": "next start",
-    "codegen": "graphql-codegen --config codegen.yml"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "prisma:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@apollo/client": "3.4.16",

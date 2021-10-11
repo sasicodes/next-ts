@@ -7,8 +7,10 @@ export default function Home({ users }: { users: User[] }) {
   return (
     <div className="container h-screen mx-auto">
       <div className="my-20 text-center">
-        <h1 className="mb-5 text-4xl font-bold">Welcome</h1>
-        <p>The following data is fetched from a local gql endpoint.</p>
+        <h1 className="mb-5 text-4xl font-bold">Hello there!</h1>
+        <p>
+          The following data is fetched from a local '/api/graphql' endpoint.
+        </p>
       </div>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
         {users.map((user: User) => (

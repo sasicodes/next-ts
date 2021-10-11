@@ -13,6 +13,7 @@ export type Scalars = {
 
 export type Query = {
   __typename?: 'Query';
+  user?: Maybe<User>;
   users: Array<Maybe<User>>;
 };
 

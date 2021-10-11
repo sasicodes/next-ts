@@ -3,6 +3,7 @@
 
 
 type Query {
+  user(id: String!): User
   users: [User]!
 }
 
