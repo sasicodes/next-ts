@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "yarn codegen && next dev",
+    "build:nexus-typegen": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' --transpile-only schema",
+    "build": "npm run build:nexus-typegen && next build",
+    "start": "next start",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.4.16",
@@ -19,6 +21,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.2.0",
     "@types/react": "17.0.27",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "autoprefixer": "10.3.7",
@@ -31,7 +34,10 @@
     "prettier": "2.4.1",
     "prisma": "3.2.1",
     "tailwindcss": "2.2.16",
-    "typescript": "4.4.3"
+    "typescript": "4.4.3",
+    "@graphql-codegen/typescript": "2.2.2",
+    "@graphql-codegen/typescript-operations": "2.1.6",
+    "@graphql-codegen/typescript-react-apollo": "3.1.4"
   },
   "engines": {
     "node": ">=14"

@@ -40,4 +40,8 @@ npx prisma studio
 
 ## Usage
 
-- `nexus` - to generate schema for typescript
+ `nexus` - to generate schema for typescript
+
+ - In `nexus` we have to define the types manually
+
+ Usign `codegen` to generate types for our application based on `schema.graphql` as input

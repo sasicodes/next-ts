@@ -3,7 +3,7 @@ import { join } from 'path'
 
 import * as types from './types'
 
-// Generates `schema.graphql` based on given types
+// Generates `schema.graphql` based on given `types`
 export const schema = makeSchema({
   types,
   outputs: {
@@ -14,7 +14,7 @@ export const schema = makeSchema({
       'nexus-typegen',
       'index.d.ts'
     ),
-    schema: join(process.cwd(), 'graphql', 'schema.graphql')
+    schema: join(process.cwd(), 'graphql', 'generated', 'schema.graphql')
   },
   contextType: {
     export: 'Context',

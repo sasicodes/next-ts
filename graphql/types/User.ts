@@ -1,6 +1,5 @@
 import { extendType, objectType } from 'nexus'
 
-// Defining `User` type manually
 export const User = objectType({
   name: 'User',
   definition(t) {
