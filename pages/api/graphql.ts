@@ -1,19 +1,20 @@
-import { createContext } from '@GraphQL/context'
+import { context } from '@GraphQL/context'
 import { schema } from '@GraphQL/schema'
+import { IS_PRODUCTION } from '@Utils/constants'
 import {
-  ApolloServerPluginLandingPageDisabled,
-  ApolloServerPluginLandingPageGraphQLPlayground
+  ApolloServerPluginLandingPageGraphQLPlayground,
+  ApolloServerPluginLandingPageProductionDefault
 } from 'apollo-server-core'
 import { ApolloServer } from 'apollo-server-micro'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 const apolloServer = new ApolloServer({
   schema,
-  context: createContext,
+  context,
   // apollo removed GraphQL playground after verison >= 3 by default, we can enable it by these plugins
   plugins: [
-    process.env.NODE_ENV === 'production'
-      ? ApolloServerPluginLandingPageDisabled()
+    IS_PRODUCTION
+      ? ApolloServerPluginLandingPageProductionDefault()
       : ApolloServerPluginLandingPageGraphQLPlayground()
   ]
 })

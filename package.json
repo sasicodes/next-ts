@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn codegen && next dev",
+    "dev": "yarn generate && next dev",
+    "generate": "prisma generate && yarn codegen",
     "build:nexus-typegen": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' --transpile-only schema",
     "build": "npm run build:nexus-typegen && next build",
     "start": "next start",

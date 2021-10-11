@@ -33,3 +33,19 @@ export const UserQuery = extendType({
     })
   }
 })
+
+export const CreateUserQuery = extendType({
+  type: 'Mutation',
+  definition(t) {
+    t.nonNull.field('createUser', {
+      type: 'User',
+      args: {
+        name: nonNull(stringArg()),
+        email: nonNull(stringArg())
+      },
+      resolve: (_parent, args, ctx) => {
+        return ctx.db.user.create({ data: args })
+      }
+    })
+  }
+})
