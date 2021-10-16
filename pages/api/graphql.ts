@@ -1,12 +1,12 @@
-import { context } from '@GraphQL/context'
-import { schema } from '@GraphQL/schema'
-import { IS_PRODUCTION } from '@Utils/constants'
 import {
   ApolloServerPluginLandingPageGraphQLPlayground,
   ApolloServerPluginLandingPageProductionDefault
 } from 'apollo-server-core'
 import { ApolloServer } from 'apollo-server-micro'
+import { context } from 'graphql/context'
+import { schema } from 'graphql/schema'
 import { NextApiRequest, NextApiResponse } from 'next'
+import { IS_PRODUCTION } from 'utils/constants'
 
 const apolloServer = new ApolloServer({
   schema,

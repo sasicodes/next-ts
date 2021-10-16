@@ -14,15 +14,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@GraphQL/*": ["graphql/*"],
-      "@Pages/*": ["pages/*"],
-      "@Prisma/*": ["prisma/*"],
-      "@Styles/*": ["styles/*"],
-      "@Lib/*": ["lib/*"],
-      "@Utils/*": ["utils/*"],
-    }
+    "baseUrl": "."
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js"],
   "exclude": [

@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
-import { User } from '@GraphQL/generated/types'
-import apolloClient from '@Lib/apollo-client'
+import { User } from 'graphql/generated/types'
+import apolloClient from 'lib/apollo-client'
 import Link from 'next/link'
 
 export default function Home({ users }: { users: User[] }) {

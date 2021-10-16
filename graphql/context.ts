@@ -1,5 +1,5 @@
-import db from '@Lib/prisma-client'
 import { PrismaClient } from '@prisma/client'
+import db from 'lib/prisma-client'
 
 export type Context = {
   db: PrismaClient
