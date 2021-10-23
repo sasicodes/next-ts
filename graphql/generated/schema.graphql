@@ -3,7 +3,7 @@
 
 
 type Mutation {
-  createUser(email: String!, name: String!): User!
+  signUp(email: String!, name: String!): User!
 }
 
 type Query {

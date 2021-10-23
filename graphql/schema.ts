@@ -1,7 +1,7 @@
 import { makeSchema } from 'nexus'
 import { join } from 'path'
 
-import * as types from './resolvers/index'
+import * as types from './resolvers'
 
 // Generates `schema.graphql` based on given `types`
 export const schema = makeSchema({

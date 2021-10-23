@@ -1,6 +1,6 @@
 import { extendType, nonNull, stringArg } from 'nexus'
 
-export const CreateUserQuery = extendType({
+export const SignUpQuery = extendType({
   type: 'Mutation',
   definition(t) {
     t.nonNull.field('signUp', {
