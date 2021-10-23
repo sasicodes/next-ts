@@ -9,10 +9,11 @@ generator client {
 
 model User {
   id        String   @id @default(uuid())
-  email     String   @unique
-  name      String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  email String  @unique
+  name  String?
 
   @@map("users")
 }
