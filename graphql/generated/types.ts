@@ -11,9 +11,26 @@ export type Scalars = {
   Float: number;
 };
 
+export type Mutation = {
+  __typename?: 'Mutation';
+  signUp: User;
+};
+
+
+export type MutationSignUpArgs = {
+  email: Scalars['String'];
+  name: Scalars['String'];
+};
+
 export type Query = {
   __typename?: 'Query';
-  ok: Scalars['Boolean'];
+  user?: Maybe<User>;
+  users: Array<Maybe<User>>;
+};
+
+
+export type QueryUserArgs = {
+  id: Scalars['String'];
 };
 
 export type User = {
