@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "2.2.1",
-    "@types/react": "17.0.30",
+    "@types/react": "17.0.31",
     "@typescript-eslint/eslint-plugin": "5.1.0",
     "autoprefixer": "10.3.7",
     "eslint": "8.1.0",
