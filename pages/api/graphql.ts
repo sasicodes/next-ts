@@ -11,7 +11,7 @@ import { IS_PRODUCTION } from 'utils/constants'
 const apolloServer = new ApolloServer({
   schema,
   context,
-  // apollo removed GraphQL playground after verison >= 3 by default, we can enable it by these plugins
+  // apollo removed GraphQL playground after version >= 3 by default, we can enable it by these plugins
   plugins: [
     IS_PRODUCTION
       ? ApolloServerPluginLandingPageProductionDefault()
@@ -31,7 +31,6 @@ export default async function handler(
   })(req, res)
 }
 
-// NextJs parses the body by default and so we are disabling it
 export const config = {
   api: {
     bodyParser: false
