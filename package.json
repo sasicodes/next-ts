@@ -31,7 +31,7 @@
     "eslint-config-next": "12.0.2",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "eslint-plugin-unicorn": "37.0.1",
-    "eslint-plugin-unused-imports": "1.1.5",
+    "eslint-plugin-unused-imports": "2.0.0",
     "postcss": "8.3.11",
     "prettier": "2.4.1",
     "prisma": "3.3.0",
