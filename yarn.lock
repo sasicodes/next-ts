@@ -544,10 +544,10 @@
     ts-node "^9"
     tslib "^2"
 
-"@eslint/eslintrc@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.3.tgz#41f08c597025605f672251dcc4e8be66b5ed7366"
-  integrity sha512-DHI1wDPoKCBPoLZA3qDR91+3te/wDSc1YhKg3jR8NxKKRJq2hwHwcWv31cSwSYvIBrmbENoYMWcenW8uproQqg==
+"@eslint/eslintrc@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.4.tgz#dfe0ff7ba270848d10c5add0715e04964c034b31"
+  integrity sha512-h8Vx6MdxwWI2WM8/zREHMoqdgLNXEL4QX3MWSVMdyNJGvXVOs+6lp+m2hc3FnuMHDc4poxFNI20vCk0OmI4G0Q==
   dependencies:
     ajv "^6.12.4"
     debug "^4.3.2"
@@ -555,7 +555,7 @@
     globals "^13.9.0"
     ignore "^4.0.6"
     import-fresh "^3.2.1"
-    js-yaml "^3.13.1"
+    js-yaml "^4.1.0"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
@@ -627,6 +627,15 @@
     lodash "~4.17.0"
     tslib "~2.3.0"
 
+"@graphql-codegen/schema-ast@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/schema-ast/-/schema-ast-2.4.0.tgz#a41fdf2bacf88ec8318c78fdf03f19e620e5534a"
+  integrity sha512-xsLd4mF0H3mPp7Z2PHZ2Sv1KKIb/FOORqhDc9XHCnHJJ/h9nmaleKSTxTGzSUfIAQ1aCNzVilcaUwlenK+MMBQ==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.3.0"
+    "@graphql-tools/utils" "^8.1.1"
+    tslib "~2.3.0"
+
 "@graphql-codegen/typescript-operations@2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-operations/-/typescript-operations-2.2.0.tgz#73bf9261a9e28708952aa74c3a0c659fb8005483"
@@ -638,10 +647,10 @@
     auto-bind "~4.0.0"
     tslib "~2.3.0"
 
-"@graphql-codegen/typescript-react-apollo@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-react-apollo/-/typescript-react-apollo-3.2.0.tgz#671cba8bd5b3f99d8ba0e9737cc8b6bdbfbb2ae8"
-  integrity sha512-Oz0jnkmoXMO9jZWAoAFWZRSeJ8SCnqP5xFIAG/XR/eJrgp/DrY9AXs8mfOjg6K2Wq4KMhTbvjv+FNoVASB76Mw==
+"@graphql-codegen/typescript-react-apollo@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-react-apollo/-/typescript-react-apollo-3.2.1.tgz#a11aad061d6251ab38a9c2be08968e73cfcae1eb"
+  integrity sha512-fA99uAGwPxLVd8ANbdSkZTnalmSX2ScNQY7rBTzxhnHQWlheYWj22QBpVwO3gbGwQKMpHPnmlAZS0js5C/f4lQ==
   dependencies:
     "@graphql-codegen/plugin-helpers" "^2.3.0"
     "@graphql-codegen/visitor-plugin-common" "2.5.0"
@@ -649,7 +658,18 @@
     change-case-all "1.0.14"
     tslib "~2.3.0"
 
-"@graphql-codegen/typescript@2.3.0", "@graphql-codegen/typescript@^2.3.0":
+"@graphql-codegen/typescript@2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-2.3.1.tgz#ad557cc28f20aa8a9ad9f153c3c8ac8b6e09075a"
+  integrity sha512-5wfuJhXnDVdufznLZG2/YlPMy5qGVYAEodBACVT8Dfgnt7T8eQOdaTfEPh04hqf/WR6DDoiLrJDcdyqWUO305w==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.3.0"
+    "@graphql-codegen/schema-ast" "^2.4.0"
+    "@graphql-codegen/visitor-plugin-common" "2.5.0"
+    auto-bind "~4.0.0"
+    tslib "~2.3.0"
+
+"@graphql-codegen/typescript@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-2.3.0.tgz#af7614558f911996ced63dbe8a22ee20974e429c"
   integrity sha512-bsq+y0cyrltVfpK5/JVz90lMBFby/Q+4oxiFGpjVdAjv/dbS9Bu476tQlN0Es76fc88Ce25wD40JXKfgWQDqKw==
@@ -1105,22 +1125,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@prisma/client@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.3.0.tgz#7945101206af1927d925a8d9c62bb188e9260c97"
-  integrity sha512-34tonDW2v74VcG1mx+k/IUGG/eSHKwDiYKfFIZgaPLq/C0h8YQxh7pro272xpOf1pt6duX1Bi90dpGijh1MYgQ==
+"@prisma/client@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.4.2.tgz#36b8da0d788e4f5dc7c4a5e83a9f83b0e2bfbb1a"
+  integrity sha512-HyQGq9m1V99zpNSJ/FojZJnvzqWUd18ErIXwxLzSuurS23XlhHEPtxgpxJaegBmjsr/KCYqcXFOPmM1gRLpI0w==
   dependencies:
-    "@prisma/engines-version" "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
+    "@prisma/engines-version" "3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9"
 
-"@prisma/engines-version@3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c":
-  version "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
-  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c.tgz#10269530152dc126c81b363c27cefc3c060013e2"
-  integrity sha512-g21xPYq0zHoJ/xUkNxIf5Hle0oiDyelZHU8gwq7J3RNVrccjbUZ28S99KT4yUabV8SQQRNSnR0QMLGMv9Eqs/A==
+"@prisma/engines-version@3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9":
+  version "3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9.tgz#ad922c461baea416ec26ad33a144c70ae7e997d4"
+  integrity sha512-H8bnBT5jLap+0nULBAGjf+xb5XNn4d60U4J9cck+UanyEkeMS3aYCeHvNiQl46XwvN60jkUX8BwV3NOEmPh0SQ==
 
-"@prisma/engines@3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c":
-  version "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
-  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c.tgz#99026c466ffe1229c94e3392a1ae923a149be4f1"
-  integrity sha512-T3nEnRWmoneNZJPd9IBR29G8ZDUjNelA8+cG5y8/lh6vySm6ryWSNxj1s377U9YzFYyZmXiA9vK1iyxMoRff/g==
+"@prisma/engines@3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9":
+  version "3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9"
+  resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9.tgz#8e5534bfe255210c29b5181f694c9acd32d558c2"
+  integrity sha512-NO4Q88k3CfUpYzfpDD+0wSVCqhaeljCFAGSe1XyvmXAOlMU2AAjCwmRn6S4UXlT9yEGB/LwFjdvGjcgfUQ+Mtw==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -1294,13 +1314,13 @@
   resolved "https://registry.npmjs.org/@types/zen-observable/-/zen-observable-0.8.3.tgz"
   integrity sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==
 
-"@typescript-eslint/eslint-plugin@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.3.0.tgz#a55ae72d28ffeb6badd817fe4566c9cced1f5e29"
-  integrity sha512-ARUEJHJrq85aaiCqez7SANeahDsJTD3AEua34EoQN9pHS6S5Bq9emcIaGGySt/4X2zSi+vF5hAH52sEen7IO7g==
+"@typescript-eslint/eslint-plugin@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.3.1.tgz#d8ff412f10f54f6364e7fd7c1e70eb6767f434c3"
+  integrity sha512-cFImaoIr5Ojj358xI/SDhjog57OK2NqlpxwdcgyxDA3bJlZcJq5CPzUXtpD7CxI2Hm6ATU7w5fQnnkVnmwpHqw==
   dependencies:
-    "@typescript-eslint/experimental-utils" "5.3.0"
-    "@typescript-eslint/scope-manager" "5.3.0"
+    "@typescript-eslint/experimental-utils" "5.3.1"
+    "@typescript-eslint/scope-manager" "5.3.1"
     debug "^4.3.2"
     functional-red-black-tree "^1.0.1"
     ignore "^5.1.8"
@@ -1308,15 +1328,15 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/experimental-utils@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-5.3.0.tgz#ee56b4957547ed2b0fc7451205e41502e664f546"
-  integrity sha512-NFVxYTjKj69qB0FM+piah1x3G/63WB8vCBMnlnEHUsiLzXSTWb9FmFn36FD9Zb4APKBLY3xRArOGSMQkuzTF1w==
+"@typescript-eslint/experimental-utils@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-5.3.1.tgz#bbd8f9b67b4d5fdcb9d2f90297d8fcda22561e05"
+  integrity sha512-RgFn5asjZ5daUhbK5Sp0peq0SSMytqcrkNfU4pnDma2D8P3ElZ6JbYjY8IMSFfZAJ0f3x3tnO3vXHweYg0g59w==
   dependencies:
     "@types/json-schema" "^7.0.9"
-    "@typescript-eslint/scope-manager" "5.3.0"
-    "@typescript-eslint/types" "5.3.0"
-    "@typescript-eslint/typescript-estree" "5.3.0"
+    "@typescript-eslint/scope-manager" "5.3.1"
+    "@typescript-eslint/types" "5.3.1"
+    "@typescript-eslint/typescript-estree" "5.3.1"
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
@@ -1338,23 +1358,23 @@
     "@typescript-eslint/types" "4.33.0"
     "@typescript-eslint/visitor-keys" "4.33.0"
 
-"@typescript-eslint/scope-manager@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-5.3.0.tgz#97d0ccc7c9158e89e202d5e24ce6ba49052d432e"
-  integrity sha512-22Uic9oRlTsPppy5Tcwfj+QET5RWEnZ5414Prby465XxQrQFZ6nnm5KnXgnsAJefG4hEgMnaxTB3kNEyjdjj6A==
+"@typescript-eslint/scope-manager@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-5.3.1.tgz#3cfbfbcf5488fb2a9a6fbbe97963ee1e8d419269"
+  integrity sha512-XksFVBgAq0Y9H40BDbuPOTUIp7dn4u8oOuhcgGq7EoDP50eqcafkMVGrypyVGvDYHzjhdUCUwuwVUK4JhkMAMg==
   dependencies:
-    "@typescript-eslint/types" "5.3.0"
-    "@typescript-eslint/visitor-keys" "5.3.0"
+    "@typescript-eslint/types" "5.3.1"
+    "@typescript-eslint/visitor-keys" "5.3.1"
 
 "@typescript-eslint/types@4.33.0":
   version "4.33.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-4.33.0.tgz"
   integrity sha512-zKp7CjQzLQImXEpLt2BUw1tvOMPfNoTAfb8l51evhYbOEEzdWyQNmHWWGPR6hwKJDAi+1VXSBmnhL9kyVTTOuQ==
 
-"@typescript-eslint/types@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-5.3.0.tgz#af29fd53867c2df0028c57c36a655bd7e9e05416"
-  integrity sha512-fce5pG41/w8O6ahQEhXmMV+xuh4+GayzqEogN24EK+vECA3I6pUwKuLi5QbXO721EMitpQne5VKXofPonYlAQg==
+"@typescript-eslint/types@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-5.3.1.tgz#afaa715b69ebfcfde3af8b0403bf27527912f9b7"
+  integrity sha512-bG7HeBLolxKHtdHG54Uac750eXuQQPpdJfCYuw4ZI3bZ7+GgKClMWM8jExBtp7NSP4m8PmLRM8+lhzkYnSmSxQ==
 
 "@typescript-eslint/typescript-estree@4.33.0":
   version "4.33.0"
@@ -1369,13 +1389,13 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
-"@typescript-eslint/typescript-estree@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.3.0.tgz#4f68ddd46dc2983182402d2ab21fb44ad94988cf"
-  integrity sha512-FJ0nqcaUOpn/6Z4Jwbtf+o0valjBLkqc3MWkMvrhA2TvzFXtcclIM8F4MBEmYa2kgcI8EZeSAzwoSrIC8JYkug==
+"@typescript-eslint/typescript-estree@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.3.1.tgz#50cc4bfb93dc31bc75e08ae52e29fcb786d606ec"
+  integrity sha512-PwFbh/PKDVo/Wct6N3w+E4rLZxUDgsoII/GrWM2A62ETOzJd4M6s0Mu7w4CWsZraTbaC5UQI+dLeyOIFF1PquQ==
   dependencies:
-    "@typescript-eslint/types" "5.3.0"
-    "@typescript-eslint/visitor-keys" "5.3.0"
+    "@typescript-eslint/types" "5.3.1"
+    "@typescript-eslint/visitor-keys" "5.3.1"
     debug "^4.3.2"
     globby "^11.0.4"
     is-glob "^4.0.3"
@@ -1390,12 +1410,12 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
-"@typescript-eslint/visitor-keys@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.3.0.tgz#a6258790f3b7b2547f70ed8d4a1e0c3499994523"
-  integrity sha512-oVIAfIQuq0x2TFDNLVavUn548WL+7hdhxYn+9j3YdJJXB7mH9dAmZNJsPDa7Jc+B9WGqoiex7GUDbyMxV0a/aw==
+"@typescript-eslint/visitor-keys@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-5.3.1.tgz#c2860ff22939352db4f3806f34b21d8ad00588ba"
+  integrity sha512-3cHUzUuVTuNHx0Gjjt5pEHa87+lzyqOiHXy/Gz+SJOCW1mpw9xQHIIEwnKn+Thph1mgWyZ90nboOcSuZr/jTTQ==
   dependencies:
-    "@typescript-eslint/types" "5.3.0"
+    "@typescript-eslint/types" "5.3.1"
     eslint-visitor-keys "^3.0.0"
 
 "@wry/context@^0.6.0":
@@ -1651,13 +1671,6 @@ arg@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/arg/-/arg-5.0.1.tgz"
   integrity sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA==
-
-argparse@^1.0.7:
-  version "1.0.10"
-  resolved "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz"
-  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
-  dependencies:
-    sprintf-js "~1.0.2"
 
 argparse@^2.0.1:
   version "2.0.1"
@@ -3054,12 +3067,12 @@ eslint-visitor-keys@^3.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.0.0.tgz#e32e99c6cdc2eb063f204eda5db67bfe58bb4186"
   integrity sha512-mJOZa35trBTb3IyRmo8xmKBZlxf+N7OnUl4+ZhJHs/r+0770Wh/LEACE2pqMGMe27G/4y8P2bYGk4J70IC5k1Q==
 
-eslint@8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.1.0.tgz#00f1f7dbf4134f26588e6c9f2efe970760f64664"
-  integrity sha512-JZvNneArGSUsluHWJ8g8MMs3CfIEzwaLx9KyH4tZ2i+R2/rPWzL8c0zg3rHdwYVpN/1sB9gqnjHwz9HoeJpGHw==
+eslint@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.2.0.tgz#44d3fb506d0f866a506d97a0fc0e90ee6d06a815"
+  integrity sha512-erw7XmM+CLxTOickrimJ1SiF55jiNlVSp2qqm0NuBWPtHYQCegD5ZMaW0c3i5ytPqL+SSLaCxdvQXFPLJn+ABw==
   dependencies:
-    "@eslint/eslintrc" "^1.0.3"
+    "@eslint/eslintrc" "^1.0.4"
     "@humanwhocodes/config-array" "^0.6.0"
     ajv "^6.10.0"
     chalk "^4.0.0"
@@ -3093,7 +3106,7 @@ eslint@8.1.0:
     progress "^2.0.0"
     regexpp "^3.2.0"
     semver "^7.2.1"
-    strip-ansi "^6.0.0"
+    strip-ansi "^6.0.1"
     strip-json-comments "^3.1.0"
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
@@ -3106,11 +3119,6 @@ espree@^9.0.0:
     acorn "^8.5.0"
     acorn-jsx "^5.3.1"
     eslint-visitor-keys "^3.0.0"
-
-esprima@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz"
-  integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
 esquery@^1.3.1, esquery@^1.4.0:
   version "1.4.0"
@@ -3556,10 +3564,10 @@ graphql-ws@^5.4.1:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.5.0.tgz#79f10248d23d104369eaef93acb9f887276a2c42"
   integrity sha512-WQepPMGQQoqS2VsrI2I3RMLCVz3CW4/6ZqGV6ABDOwH4R62DzjxwMlwZbj6vhSI/7IM3/C911yITwgs77iO/hw==
 
-graphql@16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.0.0.tgz#5724f2767aefa543418e83671372117c39408c8f"
-  integrity sha512-n9NxoRfwnpYBZB/WJ7L166gyrShuZ8qYgVaX8oxVyELcJfAwkvwPt6WlYIl90WRlzqDjaNWvLmNOSnKs5llZWQ==
+graphql@16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.0.1.tgz#93a13cd4e0e38ca8d0832e79614c8578bfd34f10"
+  integrity sha512-oPvCuu6dlLdiz8gZupJ47o1clgb72r1u8NDBcQYjcV6G/iEdmE11B1bBlkhXRvV0LisP/SXRFP7tT6AgaTjpzg==
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -4162,14 +4170,6 @@ jest-worker@27.0.0-next.5:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
-
-js-yaml@^3.13.1:
-  version "3.14.1"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
-  integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
 
 js-yaml@^4.0.0, js-yaml@^4.1.0:
   version "4.1.0"
@@ -5356,12 +5356,12 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.npmjs.org/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-prisma@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.3.0.tgz#9fd685111c26d078dd7eb6ffaddc584a33ec42b4"
-  integrity sha512-E7C9mXRwZVpcnSeJT533qGHUVrYULsE9ihFvAtQMuxhTXkxoRlMLyo/1ZOyeu9GdXP8DJ7ruLOw06kEs/N3dVg==
+prisma@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.4.2.tgz#d09e983f30fed579ddb1bb60adb369db732e3de5"
+  integrity sha512-wOD1lni7MfH/Qkp5SAkUthLKG+pQcpD31Nm8nAKj9ESgqId/dy+JDSTYOuk/pySvFyby/A+bsAPWIaVmo7qqhQ==
   dependencies:
-    "@prisma/engines" "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
+    "@prisma/engines" "3.4.1-2.57771c0558568c7d08bd34c7248af5244ae16bd9"
 
 process@0.11.10:
   version "0.11.10"
@@ -6014,11 +6014,6 @@ sponge-case@^1.0.1:
   integrity sha512-dblb9Et4DAtiZ5YSUZHLl4XhH4uK80GhAZrVXdN4O2P4gQ40Wa5UIOPUHlA/nFd2PLblBZWUioLMMAVrgpoYcA==
   dependencies:
     tslib "^2.0.3"
-
-sprintf-js@~1.0.2:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
-  integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 stacktrace-parser@0.1.10:
   version "0.1.10"
