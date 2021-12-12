@@ -11,9 +11,9 @@ yarn
 npm i
 ```
 
-Add your database url in environment variable `DATABASE_URL`. (replace .env.example to .env)
+- Add your database url in environment variable `DATABASE_URL`. (replace .env.example to .env)
 
-Migrate your tables from `prisma.schema` to database using,
+- Migrate your tables from `prisma.schema` to database using,
 ```
 prisma migrate dev
 ```
@@ -44,4 +44,4 @@ npx prisma studio
 
  - In `nexus` we have to define the types manually
 
- Usign `codegen` to generate types for our application based on `schema.graphql` as input
+ Using `codegen` to generate types for our application based on `schema.graphql` as input
