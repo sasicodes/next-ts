@@ -39,7 +39,7 @@
     "tailwindcss": "3.0.13",
     "@graphql-codegen/typescript": "2.4.2",
     "@graphql-codegen/typescript-operations": "2.2.2",
-    "@graphql-codegen/typescript-react-apollo": "3.2.3"
+    "@graphql-codegen/typescript-react-apollo": "3.2.4"
   },
   "engines": {
     "node": ">=14"
