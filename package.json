@@ -30,7 +30,7 @@
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "eslint-plugin-unicorn": "42.0.0",
+    "eslint-plugin-unicorn": "43.0.0",
     "eslint-plugin-unused-imports": "2.0.0",
     "postcss": "8.4.14",
     "prisma": "4.0.0",
