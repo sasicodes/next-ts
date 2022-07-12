@@ -14,7 +14,7 @@
   "dependencies": {
     "@apollo/client": "3.6.9",
     "@prisma/client": "4.0.0",
-    "apollo-server-micro": "3.9.0",
+    "apollo-server-micro": "3.10.0",
     "graphql": "16.5.0",
     "micro": "9.3.4",
     "next": "12.2.2",
