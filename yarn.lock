@@ -2040,10 +2040,10 @@ apollo-reporting-protobuf@^3.3.2:
   dependencies:
     "@apollo/protobufjs" "1.2.4"
 
-apollo-server-core@^3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.10.0.tgz#6680b4eb4699829ed50d8a592721ee5e5e11e041"
-  integrity sha512-ln5drIk3oW/ycYhcYL9TvM7vRf7OZwJrgHWlnjnMakozBQIBSumdMi4pN001DhU9mVBWTfnmBv3CdcxJdGXIvA==
+apollo-server-core@^3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.10.1.tgz#01f9ffc57c7d15c27bd7f89d65f45522aa3f3c3d"
+  integrity sha512-UFFziv6h15QbKRZOA6wLyr1Sle9kns3JuQ5DEB7OYe5AIoOJNjZkWXX/tmLFUrSmlnDDryi6Sf5pDzpYmUC/UA==
   dependencies:
     "@apollo/utils.keyvaluecache" "^1.0.1"
     "@apollo/utils.logger" "^1.0.0"
@@ -2080,13 +2080,13 @@ apollo-server-errors@^3.3.1:
   resolved "https://registry.yarnpkg.com/apollo-server-errors/-/apollo-server-errors-3.3.1.tgz#ba5c00cdaa33d4cbd09779f8cb6f47475d1cd655"
   integrity sha512-xnZJ5QWs6FixHICXHxUfm+ZWqqxrNuPlQ+kj5m6RtEgIpekOPssH/SD9gf2B4HuWV0QozorrygwZnux8POvyPA==
 
-apollo-server-micro@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-3.10.0.tgz#4be8d04183b85835ded73c220a932e8a22e0c68a"
-  integrity sha512-FiQb3hGT22IFF6n+O+ji0/LHUAUXmnA7GpVU6q1fM2numIweU8Gk/bbO603wbqvUothTDNHFc/YNIo6gXCPIcA==
+apollo-server-micro@3.10.1:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-3.10.1.tgz#b58f13f95f2f864bb11705fc3227d120bbf8ddd8"
+  integrity sha512-0+UP6AHouFh1YxAuCZiO4MbMb55OufRIv/HNAKnwcBgn2vCXVcb/ai2vuv06dxnxbvKcJwKYHsJn3ePgMShJGg==
   dependencies:
     "@hapi/accept" "^5.0.2"
-    apollo-server-core "^3.10.0"
+    apollo-server-core "^3.10.1"
     apollo-server-types "^3.6.2"
     type-is "^1.6.18"
 
