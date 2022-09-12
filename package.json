@@ -27,7 +27,7 @@
     "@types/react": "18.0.19",
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "autoprefixer": "10.4.9",
-    "eslint": "8.23.0",
+    "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
     "eslint-plugin-simple-import-sort": "8.0.0",
     "eslint-plugin-unicorn": "43.0.2",
