@@ -2204,10 +2204,10 @@ apollo-reporting-protobuf@^3.3.3:
   dependencies:
     "@apollo/protobufjs" "1.2.6"
 
-apollo-server-core@^3.10.3:
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.10.3.tgz#64db45703785e9e79e7c5dadb6df2f7ee6fcbecc"
-  integrity sha512-PiTirlcaszgnJGzSsGui9XWh0KAh0BUW+GvRKN6O0H0qOSXSLmoqqyL83J+u+HaUZGyyiE0+VOkyCcuF+kKbEw==
+apollo-server-core@^3.10.4:
+  version "3.10.4"
+  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-3.10.4.tgz#0ea596a65f30eeb476f3a9d98a4340336a67fe29"
+  integrity sha512-eh5AH4b8savvw/9Fd0uH8WIV5EydIS55y5v3Xuu7Ztfdjjd0w1vuc7+4iV+C0w6/KyKQkOnFZCP/sWk2CQCNIQ==
   dependencies:
     "@apollo/utils.keyvaluecache" "^1.0.1"
     "@apollo/utils.logger" "^1.0.0"
@@ -2228,6 +2228,7 @@ apollo-server-core@^3.10.3:
     graphql-tag "^2.11.0"
     loglevel "^1.6.8"
     lru-cache "^6.0.0"
+    node-abort-controller "^3.0.1"
     sha.js "^2.4.11"
     uuid "^9.0.0"
     whatwg-mimetype "^3.0.0"
@@ -2244,13 +2245,13 @@ apollo-server-errors@^3.3.1:
   resolved "https://registry.yarnpkg.com/apollo-server-errors/-/apollo-server-errors-3.3.1.tgz#ba5c00cdaa33d4cbd09779f8cb6f47475d1cd655"
   integrity sha512-xnZJ5QWs6FixHICXHxUfm+ZWqqxrNuPlQ+kj5m6RtEgIpekOPssH/SD9gf2B4HuWV0QozorrygwZnux8POvyPA==
 
-apollo-server-micro@3.10.3:
-  version "3.10.3"
-  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-3.10.3.tgz#d8c79ba2275ab0fa4d464ddccc9e661f0be35a57"
-  integrity sha512-qiMncgWd1LfuULd/DQsN3cWoRrcrEE6Cb6GgAN2DkiHJKQyOGwHn8pOmJ/SWWd/Z8xpV0C+pAk2PF+j7Ej2WNA==
+apollo-server-micro@3.10.4:
+  version "3.10.4"
+  resolved "https://registry.yarnpkg.com/apollo-server-micro/-/apollo-server-micro-3.10.4.tgz#820b7b6cd7e08fcf7e165e5f89d47ad8a36ded1f"
+  integrity sha512-ThJV7FZ+xLJRKrZlrWydYsDTWwN4diaocWfjam+fnv+nc6g6MHjTGLQIX5w+OKQgUQY2/SAGUgEeIAZAC8LThw==
   dependencies:
     "@hapi/accept" "^5.0.2"
-    apollo-server-core "^3.10.3"
+    apollo-server-core "^3.10.4"
     apollo-server-types "^3.6.3"
     type-is "^1.6.18"
 
@@ -4795,6 +4796,11 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
+
+node-abort-controller@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/node-abort-controller/-/node-abort-controller-3.0.1.tgz#f91fa50b1dee3f909afabb7e261b1e1d6b0cb74e"
+  integrity sha512-/ujIVxthRs+7q6hsdjHMaj8hRG9NuWmwrz+JdRwZ14jdFoKSkm+vDsCbF9PLpnSqjaWQJuTmVtcWHNLr+vrOFw==
 
 node-domexception@1.0.0:
   version "1.0.0"
