@@ -23,7 +23,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "2.13.12",
+    "@graphql-codegen/cli": "2.14.0",
     "@types/react": "18.0.25",
     "@typescript-eslint/eslint-plugin": "5.44.0",
     "autoprefixer": "10.4.13",
