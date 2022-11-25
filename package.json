@@ -16,7 +16,7 @@
     "@prisma/client": "4.6.1",
     "apollo-server-micro": "3.11.1",
     "graphql": "16.6.0",
-    "micro": "9.4.1",
+    "micro": "10.0.0",
     "next": "13.0.5",
     "nexus": "1.3.0",
     "react": "18.2.0",
